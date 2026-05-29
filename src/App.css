@@ -1,0 +1,555 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #132033;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.landingPage {
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 35%),
+    linear-gradient(135deg, #28a6e8 0%, #bff3ff 100%);
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 70px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+}
+
+.minderLogo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.minderIcon {
+  width: 64px;
+  height: 64px;
+  background: #2fa8e8;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 16px 35px rgba(23, 127, 192, 0.25);
+}
+
+.minderWord {
+  color: #2fa8e8;
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.mainTitle {
+  color: #126fab;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 20px 0 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  max-width: 850px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #101828;
+}
+
+.description {
+  font-size: 21px;
+  line-height: 1.7;
+  color: #334155;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.primaryBtn {
+  background: #25a7e8;
+  color: white;
+  padding: 16px 36px;
+  border-radius: 999px;
+  font-size: 17px;
+  font-weight: 800;
+  margin-top: 16px;
+  box-shadow: 0 12px 28px rgba(37, 167, 232, 0.28);
+}
+
+.primaryBtn:hover {
+  background: #168dcc;
+  transform: translateY(-1px);
+}
+
+.secondaryBtn {
+  background: white;
+  color: #25a7e8;
+  padding: 16px 34px;
+  border-radius: 999px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 1px solid #d7e7f3;
+}
+
+.simpleHeader {
+  width: 100%;
+  height: 82px;
+  padding: 0 64px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #e6eaf0;
+}
+
+.simpleHeader button {
+  background: transparent;
+  padding: 0;
+}
+
+.simpleHeader .minderIcon {
+  width: 42px;
+  height: 42px;
+  font-size: 28px;
+  border-radius: 12px;
+}
+
+.simpleHeader .minderWord {
+  font-size: 34px;
+  letter-spacing: -2px;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.centerPanel {
+  max-width: 760px;
+  margin: 90px auto;
+  background: white;
+  border-radius: 28px;
+  padding: 48px;
+  box-shadow: 0 20px 50px rgba(31, 45, 61, 0.08);
+}
+
+.centerPanel h1 {
+  font-size: 42px;
+}
+
+.centerPanel p {
+  font-size: 18px;
+  color: #4a5568;
+}
+
+.accountList {
+  margin-top: 32px;
+  display: grid;
+  gap: 14px;
+}
+
+.accountList button {
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  background: #eef3f8;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #263241;
+  text-align: left;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.red {
+  background: #e13f3f;
+}
+
+.blue {
+  background: #25a7e8;
+}
+
+.green {
+  background: #24b35a;
+}
+
+.dashboard,
+.homeGrid {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 32px;
+}
+
+.sideCard,
+.mainCard,
+.groupsCard,
+.formCard {
+  background: white;
+  border-radius: 28px;
+  padding: 36px;
+  box-shadow: 0 20px 50px rgba(31, 45, 61, 0.08);
+}
+
+.sideCard {
+  background: linear-gradient(135deg, #25a7e8, #bdefff);
+  color: white;
+}
+
+.sideCard h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.sideCard p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mainCard h1 {
+  font-size: 42px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid #d9e7f2;
+  cursor: pointer;
+}
+
+.taskItem span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e8f6fd;
+  color: #25a7e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.taskItem p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.formPage {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.formPage h1 {
+  font-size: 48px;
+}
+
+.smallTag {
+  color: #167fc0;
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.formSection {
+  margin-bottom: 28px;
+}
+
+.formSection h3 {
+  margin-bottom: 12px;
+  color: #18263a;
+}
+
+.check {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #364254;
+}
+
+.check input {
+  margin-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 110px;
+  border: 1px solid #d5dce5;
+  border-radius: 18px;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+  margin-bottom: 24px;
+}
+
+.groupActions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.groupsCard h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.groupItem {
+  padding: 20px;
+  border-radius: 18px;
+  background: #f1f7fc;
+  margin-bottom: 16px;
+}
+
+.groupItem h3 {
+  margin: 0 0 8px;
+}
+
+.groupItem p {
+  margin: 0;
+  color: #5d6a7a;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 48px 24px;
+  }
+
+  .minderIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  .minderWord {
+    font-size: 42px;
+  }
+
+  .mainTitle {
+    font-size: 42px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .simpleHeader {
+    padding: 0 24px;
+  }
+
+  .dashboard,
+  .homeGrid,
+  .formPage {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+  }
+
+  .centerPanel {
+    margin: 40px 24px;
+    padding: 32px;
+  }
+}
+
+.authNote {
+  margin-top: 18px;
+  font-size: 15px !important;
+  color: #64748b !important;
+}
+
+.errorText {
+  margin-top: 16px;
+  color: #dc2626 !important;
+  font-weight: 700;
+}
+
+.userEmail {
+  margin-top: 20px;
+  font-size: 15px !important;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.signedInText {
+  font-size: 15px !important;
+  color: #167fc0 !important;
+  font-weight: 700;
+  margin-bottom: 12px !important;
+}
+
+.simpleHeader {
+  justify-content: space-between;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.topNav button {
+  background: transparent;
+  color: #526074;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.topNav button:hover {
+  color: #25a7e8;
+}
+
+.profilePage,
+.calendarPage {
+  padding: 80px 8%;
+}
+
+.profileHeaderCard,
+.profileSetupCard {
+  background: white;
+  border-radius: 28px;
+  padding: 42px;
+  box-shadow: 0 20px 50px rgba(31, 45, 61, 0.08);
+  margin-bottom: 28px;
+}
+
+.profileHeaderCard h1 {
+  font-size: 52px;
+  margin: 0 0 16px;
+}
+
+.profileHeaderCard p {
+  font-size: 18px;
+  color: #526074;
+}
+
+.profileTask {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 34px 0;
+  border-bottom: 1px solid #d9e7f2;
+  cursor: pointer;
+}
+
+.profileTask:last-child {
+  border-bottom: none;
+}
+
+.profileTask span {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #e8f6fd;
+  color: #25a7e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.profileTask p {
+  font-size: 30px;
+  font-weight: 900;
+  color: #132033;
+  margin: 0;
+}
+
+.calendarBox {
+  margin-top: 32px;
+  padding: 40px;
+  border-radius: 22px;
+  background: #eef6fd;
+  color: #526074;
+  font-weight: 700;
+}
+
+.authNote {
+  margin-top: 18px;
+  font-size: 15px !important;
+  color: #64748b !important;
+}
+
+.errorText {
+  margin-top: 16px;
+  color: #dc2626 !important;
+  font-weight: 700;
+}
+
+.userEmail {
+  margin-top: 20px;
+  font-size: 15px !important;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.signedInText {
+  font-size: 15px !important;
+  color: #167fc0 !important;
+  font-weight: 700;
+  margin-bottom: 12px !important;
+}
+
+.profileSummaryCard {
+  background: white;
+  border-radius: 28px;
+  padding: 36px 42px;
+  box-shadow: 0 20px 50px rgba(31, 45, 61, 0.08);
+}
+
+.profileSummaryCard h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #132033;
+}
+
+.profileSummaryCard p {
+  font-size: 17px;
+  color: #526074;
+  line-height: 1.6;
+}
