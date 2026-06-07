@@ -553,3 +553,45 @@ textarea {
   color: #526074;
   line-height: 1.6;
 }
+
+.signOutBtn {
+  color: #ef4444 !important;
+}
+
+.signOutBtn:hover {
+  color: #b91c1c !important;
+}
+
+.calendarBigTitle {
+  font-size: 42px;
+  font-weight: 900;
+  color: #167fc0;
+  margin: 0 0 24px;
+}
+
+.calendarSubTitle {
+  font-size: 32px !important;
+  margin-bottom: 18px;
+}
+
+.calendarForm {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.calendarEvent {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.calendarEvent h3 {
+  margin: 0 0 8px;
+  color: #132033;
+}
+
+.calendarEvent p {
+  margin: 4px 0;
+  color: #526074;
+}
