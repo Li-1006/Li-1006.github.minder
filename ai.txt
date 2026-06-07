@@ -1,0 +1,1 @@
+I utilized ChatGPT to assist with code debugging and to determine how to fully implement the desired UI—addressing specific details such as embedding a calendar, saving user account data, and adding photos. Additionally, the testing and final integration phases were completed and verified through a collaborative effort between myself and the AI.
